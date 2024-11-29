@@ -1,0 +1,1141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    margin: 0 15px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-list a:hover {
+    color: #00aaff;
+}
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+#search {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btn {
+    padding: 5px 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0077cc;
+}
+
+.top{
+    margin-top: 30px;
+}
+
+
+  /* রেসপনসিভ ডিজাইন */
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-list li {
+        margin: 10px 0;
+    }
+    .rightNav {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #search {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list a {
+        font-size: 14px;
+    }
+    #search {
+        width: 60%;
+    }
+}
+/* রেসপনসিভ ডিজাইন end */
+
+
+
+.btn:hover {
+    background-color: #000;
+    /* Change the background color on hover */
+    color: #ffd700;
+}
+
+ /* সাধারণ স্টাইল */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* রেসপনসিভ ডিজাইনের জন্য লাইনে ফিট না হলে পরের লাইনে যাবে */
+    margin: 0;
+    padding: 0;
+}
+
+.col-6 {
+    width: 50%; /* দুটি কলামের প্রস্থ */
+    padding: 10px; /* কলামের মধ্যে স্পেস */
+    box-sizing: border-box; /* padding এবং border নিয়ে সঠিক মাপ রাখার জন্য */
+    /* background-col   or: #ffd700; */
+}
+
+.cl1 img {
+    width: 100%; /* ইমেজ পুরোপুরি কলামের মধ্যে ফিট করবে */
+    border-radius: 200px; /* ইমেজের কোণ একটু গোল করবে */
+    width: 200px;
+    height: 200px;
+  
+
+
+}
+
+.cl2 {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    /* justify-content: center; */
+    /* background-color: #f0f0f0; ব্যাকগ্রাউন্ডের হালকা রঙ */
+    height:300px; /*কলামের উচ্চতা ঠিক রাখা
+    
+    /* text-align: center; */
+    /* background-color: aqua; */
+}
+
+/* রেসপনসিভ ডিজাইন */
+@media (max-width: 768px) {
+    .col-6 {
+        width: 100%; /* ছোট স্ক্রিনে কলাম পূর্ণ প্রস্থে থাকবে */
+    }
+}
+
+   /* রেসপনসিভ ডিজাইন */
+   @media (max-width: 768px) {
+    .col-6 {
+        width: 100%; /* ছোট স্ক্রিনে কলাম পূর্ণ প্রস্থে থাকবে */
+       
+    }
+}
+
+/* button start */
+
+/* CSS */
+.button-91 {
+  color: #fff;
+  padding: 7px 20px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 12px;
+  height: 45px;
+width: 120px;
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+
+
+
+
+
+/* CSS */
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  width: 120px;
+}
+
+li,ul{
+    display: flex; /* Flexbox enabled */
+    justify-content: center; /* Center the buttons horizontally */
+}
+/* button end */
+
+/* carosel stsrt */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f3f4f6; */
+    text-align: center;
+}
+
+.marquee-container {
+    margin: 20px auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    /* border: 2px solid #4CAF50; */
+}
+
+marquee {
+    font-size: 18px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    margin: 0 15px;
+}
+
+/* carosel end */
+
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+
+
+/* Column styling */
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+/* .container {
+    padding: 20px;
+    width: 100%;
+} */
+
+/* Row Styling */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Portfolio Title Styling */
+.col-2 {
+    flex: 1;
+    text-align: left;
+}
+
+.col-2 h2 {
+    /* font-size: 1.5rem; */
+    margin: 0;
+    color: #4CAF50; /* Green color for text */
+}
+
+/* Marquee Section Styling */
+.col-9 {
+    flex: 5;
+    text-align: center;
+}
+
+.marquee-container {
+    overflow: hidden;
+    background: #f3f4f6; /* Light background color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.marquee-img {
+    height: 100px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.marquee-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-2 {
+        margin-bottom: 10px;
+    }
+
+    .col-2 h2 {
+        font-size: 1.2rem;
+    }
+
+    .marquee-container {
+        padding: 5px;
+    }
+
+    .marquee-img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-2 h2 {
+        font-size: 1rem;
+    }
+
+    .marquee-img {
+        height: 60px;
+        margin: 5px;
+    }
+}
+
+
+/* verticlee line  */
+
+.vertical-line {
+    width: 2px; /* Line thickness */
+    height: 200px; /* Line height */
+    background-color: black; /* Line color */
+    margin: 20px auto; /* Center alignment */
+}
+.vertical-line {
+    width: 2px;
+    height: 200px;
+    border-left: 2px dashed red; /* Dashed line */
+}
+.vertical-line {
+    width: 4px;
+    height: 280px;
+    background: linear-gradient(to bottom, red, blue); /* Gradient color */
+}
+/* peragraph */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Paragraph Styling */
+.styled-paragraph {
+    font-size: 18px;          /* Font size */
+    line-height: 1.8;         /* Line height for better readability */
+    color: #333;              /* Text color */
+    background-color: #fff5e6; /* Background color */
+    padding: 20px;            /* Padding around the text */
+    border: 2px solid #ffcc80; /* Border around the paragraph */
+    border-radius: 10px;      /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: justify;      /* Justify the text */
+    max-width: 600px;         /* Maximum width of the paragraph */
+    margin: 20px auto;        /* Center the paragraph */
+}
+
+
+/* fotter start */
+.footer-dark {
+    padding: 50px 0;
+    background-color: #343a40; /* ডার্ক ব্যাকগ্রাউন্ড */
+   
+  }
+  
+  .footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    /* color: #ffffff;  */
+  }
+  
+  .footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+  }
+  
+  .footer-dark ul a {
+    /* color: #f0f0f0;  */
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity: 1;
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom: 36px;
+  }
+  
+  .footer-dark .item.text p {
+    margin-bottom: 0;
+    opacity: 0.8;
+  }
+  
+  .footer-dark .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .footer-dark .item.social > a:hover {
+  
+    color: #343a40; /* হোভার করার সময় ব্যাকগ্রাউন্ড এবং টেক্সট পরিবর্তন */
+  }
+  
+  .footer-dark .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa; /* কপিরাইটের রঙ */
+    margin-bottom: 0;
+  }
+  
+  
+ 
+/* footer end */
+/* exp */
+.exp{
+    margin-top: 20px;
+}
+
+/* all experiance */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #007bff;
+  }
+  
+  header h3 {
+    font-size: 1.5em;
+    color: #555;
+  }
+  
+  .contact, .experience, .modules {
+    margin-bottom: 20px;
+  }
+  
+  .contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  /* profail */
+  /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(135deg, #74ebd5, #9face6); */
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  /* Table Styles */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+  }
+  
+  .styled-table th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .styled-table td {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .styled-table tr:hover td {
+    background-color: #f1f1f1;
+    color: #007bff;
+  }
+  
+  /* Link Styles */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+}
+
+/* project st */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(120deg, #74ebd5, #acb6e5); */
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  header h1 {
+    font-size: 2.8rem;
+    color: #007bff;
+  }
+  
+  header h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: aqua;
+    margin-top: 5px;
+  }
+  
+  /* Project Section */
+  .projects {
+    margin-top: 30px;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+   
+  }  
+/* project end */
+
+/* Educations start */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(120deg, #74ebd5, #acb6e5); */
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  header h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Table Styles */
+  .academic-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .academic-table th, .academic-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .academic-table th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .academic-table tr {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .academic-table tr:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .academic-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header h2 {
+      font-size: 1.2rem;
+    }
+  
+    .academic-table th, .academic-table td {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  
+/* Educations end */
+/* others start */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #495057;
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* others end */
+/* profail */
+
+        /* Additional styling for navigation bar */
+        .navbar {
+            background-color:black;
+            padding: 1rem;
+            position: fixed;  /* Fixed position to stay on top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .nav-list li {
+            display: inline;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+        }
+        .rightNav {
+            margin-left: auto;
+        }
+        .profile-container {
+            padding: 2rem;
+            margin-top: 80px; /* To prevent overlap with the fixed navbar */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .rightNav input, .rightNav button {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+  
+/* profail end */
+/* contucts */
+
+        /* Fix the navbar at the top */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+
+        /* Add some margin to the body so that content is not hidden behind the fixed navbar */
+        body {
+            padding-top: 70px;
+        }
+
+        /* Style for social media icons */
+        .list-inline-item img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+/* Custom Styling */
+.contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+.contact-data-table {
+    margin-top: 50px;
+}
+.contact-data-table table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.contact-data-table table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+/* login */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+
+}
+/* admin */
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* about 2 */
+/* Ensure cards are properly spaced in smaller viewports */
+@media (max-width: 768px) {
+    .row-cols-1 .col {
+        margin-bottom: 15px; /* Add some margin between columns on small screens */
+    }
+}
+
+/* Custom spacing for the "About" section */
+@media (max-width: 768px) {
+    .cl2 {
+        margin-bottom: 20px; /* Add margin at the bottom on small screens */
+    }
+}
+
+/* For larger screens, make sure there's some gap between the columns */
+@media (min-width: 992px) {
+    .row-cols-md-2 .col {
+        padding: 20px;
+    }
+}
+
+/* Ensure the text and content fit properly within the column */
+.styled-paragraph {
+    word-wrap: break-word; /* Prevent long text from breaking layout */
+}
+/* Footer Start */
+
+.footer {
+  background-color: #2c3e50;
+  color:white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color:white;
+  text-decoration: none;
+}
+
+.footer-social-icons a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Footer End */
+#myButton:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.nav-link {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  color: #3498db !important;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-height: 40px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}

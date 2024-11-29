@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/Style.css">
+  <link rel="stylesheet" href="./assets/css/Style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+
+     <!-- Navigation Bar Start -->
+<div class="">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Index.html"><img src="assets\image\logo.png" alt="" style="height: 50px; width: 100px;"></a>
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Educations.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Experiance.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profail.html">Personal Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navigation Bar End -->
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>📞 Contact</h2>
+        <table class="styled-table">
+            <tr>
+                <th>Phone</th>
+                <td>+88 01789639995</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><a href="mailto:arifulsoft28@gmail.com">arifulsoft28@gmail.com</a></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>152/7, Green Road, Dhaka 1205</td>
+            </tr>
+            <tr>
+                <th>LinkedIn</th>
+                <td><a href="https://www.linkedin.com/in/arifulsoft1/">Ariful Islam</a></td>
+            </tr>
+            <tr>
+                <th>GitHub</th>
+                <td><a href="https://github.com/arifulsoft">ArifulSoft</a></td>
+            </tr>
+        </table>
+
+        <!-- Social Media Icons -->
+        <ul class="list-inline mt-3">
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/profile.php?id=100027493650354"><img src="assets/image/communication.png" alt="Contact"></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/arifulsoft"><img src="assets/image/github.png" alt="GitHub"></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/arifulsoft1/"><img src="assets/image/linkedin.png" alt="LinkedIn"></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/ariful__isalm/"><img src="assets/image/instagram.png" alt="Instagram"></a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Customer Contact Form -->
+    <div class="container mt-5">
+        <h2> Have Questions?</h2>
+        <form id="customer-form">
+            <div class="form-group">
+                <label for="customer-name">Name</label>
+                <input type="text" class="form-control" id="customer-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-email">Email</label>
+                <input type="email" class="form-control" id="customer-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-phone">Phone</label>
+                <input type="text" class="form-control" id="customer-phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-message">Message</label>
+                <textarea class="form-control" id="customer-message" rows="3" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("customer-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const customerName = document.getElementById("customer-name").value;
+            const customerEmail = document.getElementById("customer-email").value;
+            const customerPhone = document.getElementById("customer-phone").value;
+            const customerMessage = document.getElementById("customer-message").value;
+
+            // Get existing customer data from localStorage
+            let customerData = JSON.parse(localStorage.getItem("customerData")) || [];
+
+            // Add new customer data
+            customerData.push({
+                name: customerName,
+                email: customerEmail,
+                phone: customerPhone,
+                message: customerMessage
+            });
+
+            // Save updated customer data back to localStorage
+            localStorage.setItem("customerData", JSON.stringify(customerData));
+
+            alert("Your message has been sent successfully!");
+
+            // Clear the form
+            document.getElementById("customer-form").reset();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- footer start -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Skills</h4>
+        <p>Proficient in HTML,CSS,Bootstrap,Javascript, Angular, Spring Boot, Android & Flutter</p>
+      </div>
+      <div class="footer-section footer-social-icons">
+        <h4>Quick Links</h4>
+        <a href="Index.html">Home</a>
+        <a href="Experiance.html">Experiance</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Contact.html">Countact</a>
+      
+      </div>
+      <div class="footer-section footer-social-icons">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/profile.php?id=100027493650354">Facebook</a>
+        <a href="https://github.com/arifulsoft">GitHub</a>
+        <a href="https://www.linkedin.com/in/arifulsoft1/">Linkedin</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> Design by Ariful Islam-2024</p>
+    </div>
+  </div>
+   <!-- footer end -->
+</body>
+</html>
